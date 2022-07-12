@@ -4,6 +4,7 @@
 
 # This is the "game.py" file
 from random import random
+from re import X
 
 
 print ("Rock, Paper, Scissors, Shoot!")
@@ -22,14 +23,24 @@ elif YourChoice == "paper":
 elif YourChoice == "scissor":
     print ("Your chose: scissor")
 else: print ("Invalid input. Please try again.")
-exit ()
+
 
 # Function PC_Choice() to simulate computer choice
 # Use the Random module
-def PC_Choice ():
- x = random
- print (type(x))
- print (x)
-end ()
+import random
+x = random.random()
+print (round(x,2))
+
+#def PC_Choice ():
+if 0<x<0.33:
+    print ("PC chose: rock")
+elif 0.33<x<0.67:
+    print ("PC chose: paper") 
+elif 0.67<x<1:
+    print ("PC chose: scissor")
+
+# Function to determine the winner or tie
+
+
 
 
